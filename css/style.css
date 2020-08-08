@@ -19,20 +19,6 @@ ul {
     margin: 0;
 }
 
-.button1 {
-    height: 40px;
-    background-color: #ffcb70;
-    border: 0;
-    font: 15px/1.5 'Inter', sans-serif;
-    color: #976000;
-    font-weight: bold;
-    text-transform: lowercase;
-}
-
-.button1:hover {
-    background-color: #ffb637;
-}
-
 /* Header */
 header {
     background-color: #ffdc9f;
@@ -67,7 +53,11 @@ header nav {
 
 header a:link {
     text-decoration: none;
-    outline: none;
+    color: inherit;
+}
+
+header a:visited {
+    text-decoration: none;
     color: inherit;
 }
 
@@ -121,11 +111,33 @@ header a:hover {
 
 #newsletter input[type="email"] {
     padding: 4px;
-    height: 31px;
+    height: 29px;
     width: 200px;
     border: none;
     font: 15px/1.5 'Inter', sans-serif;
-    color: black;
+
+    border-radius: 5px;
+    border: 2px #976000 solid;
+
+    outline: none;
+}
+
+
+.button1 {
+    height: 40px;
+    background-color: #ffcb70;
+    border: 0;
+    font: 15px/1.5 'Inter', sans-serif;
+    color: #976000;
+    font-weight: bold;
+    text-transform: lowercase;
+
+    border-radius: 5px;
+    border: 2px #976000 solid;
+}
+
+.button1:hover {
+    background-color: #ffb637;
 }
 
 /* Boxes */
@@ -152,6 +164,75 @@ header a:hover {
 #boxes h1 {
     font-size: 50px;
     border-bottom: #976000 2px solid;
+}
+
+/* Store */
+#store .store-card {
+    float: left;
+    width: 25%;
+    height: 350px;
+    margin: 20px 20px 0 40px;
+    /* background-color: red; */
+    padding: 25px;
+    border-radius: 25px;
+    border: 2px #976000 solid;
+}
+
+#store .store-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    border: 2px #976000 solid;
+}
+
+#store .store-card h3 {
+    margin: 0;
+}
+
+#store .store-card p {
+    margin: 0;
+}
+
+.store-card .item-details {
+    float: right;
+}
+
+.store-card button {
+    color: inherit;
+    font: inherit;
+    text-transform: lowercase;
+    border-radius: 5px;
+    border: 2px #976000 solid;
+    background-color: #ffebc9;
+    outline: none;
+}
+
+.store-card button:hover {
+    background-color: #ffdc9f;
+}
+
+#store .cart {
+    margin: 20px 55px 0 0;
+    width: 15%;
+    height: 810px;
+    float: right;
+    /* background-color: red; */
+    border: 2px #976000 solid;
+}
+
+.store-container {
+    margin: 50px;
+    float: left;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.cart-title {
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+    border-bottom: 2px #976000 solid;
 }
 
 footer {
